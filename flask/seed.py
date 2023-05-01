@@ -10,7 +10,9 @@ with app.app_context():
     # Create bands
     radiohead = Band(name='Radiohead1')
     pink_floyd = Band(name='Pink Floyd')
+
     arcade_fire = Band(name='Arcade Fire123')
+
     db.session.add_all([radiohead, pink_floyd, arcade_fire])
     db.session.commit()
 
