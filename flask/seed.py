@@ -8,14 +8,14 @@ with app.app_context():
     db.create_all()
 
     # Create bands
-    radiohead = Band(name='Radiohead')
+    radiohead = Band(name='Radiohead1')
     pink_floyd = Band(name='Pink Floyd')
-    arcade_fire = Band(name='Arcade Fire')
+    arcade_fire = Band(name='Arcade Fire1')
     db.session.add_all([radiohead, pink_floyd, arcade_fire])
     db.session.commit()
 
     # Create concerts
-    msg = Concert(date='2023-05-01')
+    msg = Concert(date='2023-05-02')
     animals = Concert(date='2023-06-01')
     reflektor = Concert(date='2023-07-01')
     db.session.add_all([msg, animals, reflektor])
