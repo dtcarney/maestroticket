@@ -15,7 +15,7 @@ with app.app_context():
     db.session.commit()
 
     # Create concerts
-    msg = Concert(date='2023-05-01')
+    msg = Concert(date='2023-05-02')
     animals = Concert(date='2023-06-01')
     reflektor = Concert(date='2023-07-01')
     db.session.add_all([msg, animals, reflektor])
