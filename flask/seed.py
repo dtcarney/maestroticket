@@ -1,5 +1,5 @@
-from twitter.src import create_app
-from twitter.src.models import db,Band, Concert, Venue, User, Ticket, bands_concerts_table, concerts_venues_table
+from maestroticketapp.src import create_app
+from maestroticketapp.src.models import db,Band, Concert, Venue, User, Ticket, bands_concerts_table, concerts_venues_table
 
 app = create_app()
 
