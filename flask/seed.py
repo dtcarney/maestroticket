@@ -8,7 +8,7 @@ with app.app_context():
     db.create_all()
 
     # Create bands
-    radiohead = Band(name='Radiohead')
+    radiohead = Band(name='Radiohead1')
     pink_floyd = Band(name='Pink Floyd')
     arcade_fire = Band(name='Arcade Fire')
     db.session.add_all([radiohead, pink_floyd, arcade_fire])
